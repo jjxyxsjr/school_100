@@ -7904,8 +7904,10 @@ MANIFEST
 # 例如，如果你想忽略所有 .tar.gz 文件
 *.tar.gz
 # 或者忽略特定的数据文件夹 (注意路径是相对于 .gitignore 文件的)
-CNN模块（卷积神经网络）的复现、迁移与微调/AlexNet/data/
-CNN模块（卷积神经网络）的复现、迁移与微调/LeNet/data/
+# 已有的规则应该保留
+# 如果这些（或类似的正确路径）尚不存在，请添加它们：
+CNN（卷积神经网络）模型的复现、迁移与微调/AlexNet/data/dataset/
+CNN（卷积神经网络）模型的复现、迁移与微调/LeNet/data/cifar-10-batches-py/
 pytorch验证及FCNN_MNIST/data/
 pytorch验证及FCNN_MNIST/results/
 pytorch验证及FCNN_MNIST/saved_models/
