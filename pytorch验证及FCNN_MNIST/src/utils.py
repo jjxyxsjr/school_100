@@ -1,5 +1,6 @@
 # src/utils.py
 import matplotlib.pyplot as plt
+from PIL import Image, ImageOps # <--- 确保 ImageOps 在这里被导入
 import os
 import torch
 from PIL import Image
