@@ -7909,3 +7909,5 @@ CNN模块（卷积神经网络）的复现、迁移与微调/LeNet/data/
 pytorch验证及FCNN_MNIST/data/
 pytorch验证及FCNN_MNIST/results/
 pytorch验证及FCNN_MNIST/saved_models/
+# Model files
+*.pth
