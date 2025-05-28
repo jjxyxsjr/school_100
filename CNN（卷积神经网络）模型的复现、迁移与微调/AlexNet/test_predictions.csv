@@ -818,3 +818,9 @@ image_08134.jpg,55,55,pelargonium
 image_08144.jpg,83,83,hibiscus
 image_08172.jpg,85,85,desert-rose
 image_08177.jpg,0,0,未知
+
+总结一下 image_08134.jpg,55,55,pelargonium 这一行：
+模型认为图片 image_08134.jpg
+最有可能属于内部索引为 55 的类别，
+这个内部索引对应于训练时名为 '55' 的类别文件夹，
+而这个类别文件夹在 cat_to_name.json 中被定义为花卉 "pelargonium"（天竺葵属植物）。
