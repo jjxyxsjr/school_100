@@ -1,0 +1,35 @@
+--- LeNet 模型训练开始 ---
+参数: Batch Size=64, Test Batch Size=1000, Learning Rate=0.001
+Epoch 1 - Training Loss: 1.7332, Time: 11.57 seconds
+Test Accuracy: 43.82%, Time: 1.99 seconds
+Epoch 2 - Training Loss: 1.4763, Time: 12.78 seconds
+Test Accuracy: 49.24%, Time: 2.05 seconds
+Epoch 3 - Training Loss: 1.3544, Time: 12.90 seconds
+Test Accuracy: 52.18%, Time: 2.02 seconds
+Epoch 4 - Training Loss: 1.2735, Time: 13.32 seconds
+Test Accuracy: 53.17%, Time: 2.33 seconds
+Epoch 5 - Training Loss: 1.2093, Time: 14.64 seconds
+Test Accuracy: 54.25%, Time: 1.93 seconds
+Epoch 6 - Training Loss: 1.1550, Time: 13.37 seconds
+Test Accuracy: 55.31%, Time: 2.04 seconds
+Epoch 7 - Training Loss: 1.1058, Time: 12.68 seconds
+Test Accuracy: 55.90%, Time: 1.88 seconds
+Epoch 8 - Training Loss: 1.0640, Time: 12.77 seconds
+Test Accuracy: 55.76%, Time: 2.01 seconds
+Epoch 9 - Training Loss: 1.0273, Time: 12.66 seconds
+Test Accuracy: 55.80%, Time: 2.04 seconds
+Epoch 10 - Training Loss: 1.0000, Time: 12.71 seconds
+Test Accuracy: 56.76%, Time: 2.01 seconds
+--- LeNet 模型训练结束 ---
+
+可以的，你可以用现有的 LeNet 模型来跑 CIFAR-10 数据集，但是你需要做一些必要的修改来适配数据集的特性，并且性能可能不会很好。
+### 必要的修改
+不修改架构的性能预期
+即使你做了上述必要的修改，LeNet 在 CIFAR-10 上的表现会相对较差。原因如下：
+
+模型深度和复杂性不足: LeNet 是一个相对较浅的网络（只有两个卷积层）。CIFAR-10 图像的复杂性（彩色、更多样的物体、背景）需要更深、更复杂的网络才能捕捉到有用的特征。
+激活函数: LeNet 使用 Tanh 激活函数。在现代深度学习中，ReLU (Rectified Linear Unit) 通常表现更好，因为它能缓解梯度消失问题，并加速训练。
+池化方式: LeNet 使用平均池化 (AvgPool2d)。虽然平均池化在某些场景下有用，但最大池化 (MaxPool2d) 通常在特征提取方面更有效，因为它能保留最重要的特征。
+无正则化: 原始 LeNet 没有使用 Dropout、Batch Normalization 等正则化技术，这些技术对于防止在更复杂数据集上过拟合至关重要。
+训练策略: 初始学习率可能需要调整，并且可能需要更长的训练时间（更多 Epoch）。
+你可以运行，但不要期望太高的准确率。 准确率可能在 60-70% 左右（甚至更低），而现代的 CNN 模型在 CIFAR-10 上可以轻松达到 90% 以上。
