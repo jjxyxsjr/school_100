@@ -1,3 +1,11 @@
+# 默认忽略的文件
+/shelf/
+/workspace.xml
+# 基于编辑器的 HTTP 客户端请求
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
 # PyCharm
 .idea/
 
@@ -7,37 +15,21 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Distribution / packaging
+# Distribution / packaging (这些是标准的Python忽略，保留它们)
 .Python
 build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# ... (其他标准Python忽略条目) ...
 MANIFEST
 
-# 大型数据文件和文件夹 (根据你的实际路径调整)
-# 例如，如果你想忽略所有 .tar.gz 文件
+# 忽略所有 .tar.gz 压缩包 (如果你有其他需要提交的.tar.gz则移除此行)
 *.tar.gz
-# 或者忽略特定的数据文件夹 (注意路径是相对于 .gitignore 文件的)
-# 已有的规则应该保留
-# 如果这些（或类似的正确路径）尚不存在，请添加它们：
-CNN（卷积神经网络）模型的复现、迁移与微调/AlexNet/data/dataset/
-CNN（卷积神经网络）模型的复现、迁移与微调/LeNet/data/cifar-10-batches-py/
-pytorch验证及FCNN_MNIST/data/
-pytorch验证及FCNN_MNIST/results/
-pytorch验证及FCNN_MNIST/saved_models/
-# Model files
+
+# 忽略所有 .pth 模型权重文件 (这是处理你的第4点和第6点需求)
+# 这会忽略所有 .pth 文件，包括你提到的那两个
 *.pth
+
+# 下面这些规则用来忽略指定文件夹内的所有内容，
+# 但我们稍后会通过在这些文件夹内添加 .gitkeep 文件来保留目录结构。
+# 所以，如果这些文件夹本身不应被忽略，而是其内容应被忽略，
+# 确保这些文件夹名本身没有出现在这里。
+# 例如，不要写 CNN(...)/AlexNet/data/dataset/ 这一行，除非你想忽略整个文件夹及其.gitkeep
