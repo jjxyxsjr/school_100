@@ -8,7 +8,6 @@ import time
 import os
 from lenet_model import LeNet  # 从 lenet_model.py 导入 LeNet 类
 
-
 class LeNetTrainer:
     def __init__(self, data_root='./data', batch_size=64, test_batch_size=1000, lr=0.001):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
