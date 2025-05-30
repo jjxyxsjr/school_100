@@ -2,7 +2,7 @@ import json
 import matplotlib.pyplot as plt
 
 # 读取 JSON 文件
-with open(r"D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\AlexNet\training_metrics_enhanced.json", "r", encoding="utf-8") as f:
+with open(r"D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\AlexNet\微调\finetune_metrics.json", "r", encoding="utf-8") as f:
     history = json.load(f)
 
 # 提取数据
