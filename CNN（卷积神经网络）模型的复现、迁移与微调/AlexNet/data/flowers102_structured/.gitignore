@@ -1,0 +1,13 @@
+# 默认忽略的文件
+/shelf/
+/workspace.xml
+# 基于编辑器的 HTTP 客户端请求
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Ignore everything in this directory
+train
+# Except this .gitignore file itself and a .gitkeep file
+!.gitignore
+!.gitkeep

@@ -7,7 +7,7 @@
 /dataSources/
 /dataSources.local.xml
 # Ignore everything in this directory
-*
+train
 # Except this .gitignore file itself and a .gitkeep file
 !.gitignore
 !.gitkeep
