@@ -1,0 +1,119 @@
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# yolo detect train model=yolov8n.pt data=dataset.yaml epochs=50 imgsz=640
+bash: yolo: command not found
+没找到！！！
+
+
+下载yolov8
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# pip install ultralytics⚠️ ⚠️ ⚠️ ⚠️
+Looking in indexes: http://mirrors.aliyun.com/pypi/simple
+Collecting ultralytics
+  Downloading http://mirrors.aliyun.com/pypi/packages/bc/df/4452c9cb8ee7c28d69fdf13f37090a1cc8bb44404c62c58bdf5bd9d27640/ultralytics-8.3.146-py3-none-any.whl (1.0 MB)
+     |████████████████████████        | 778 kB 7.6 MB/s eta 0:00:01
+     |████████████████████████████████| 1.0 MB 7.6 MB/s
+Requirement already satisfied: pillow>=7.1.2 in /root/miniconda3/lib/python3.8/site-packages (from ultralytics) (9.1.1)
+Collecting opencv-python>=4.6.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (63.0 MB)
+     |████████████████████████████████| 63.0 MB 3.3 MB/s
+Collecting tqdm>=4.64.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl (78 kB)
+     |████████████████████████████████| 78 kB 98.5 MB/s
+Requirement already satisfied: psutil in /root/miniconda3/lib/python3.8/site-packages (from ultralytics) (5.9.1)
+Collecting pandas>=1.1.4
+  Downloading http://mirrors.aliyun.com/pypi/packages/f8/7f/5b047effafbdd34e52c9e2d7e44f729a0655efafb22198c45cf692cdc157/pandas-2.0.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+     |████████████████████████████████| 12.4 MB 2.7 MB/s
+Collecting scipy>=1.4.1
+  Downloading http://mirrors.aliyun.com/pypi/packages/69/f0/fb07a9548e48b687b8bf2fa81d71aba9cfc548d365046ca1c791e24db99d/scipy-1.10.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.5 MB)
+     |████████████████████████████████| 34.5 MB 4.0 MB/s
+Collecting ultralytics-thop>=2.0.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/a6/10/251f036b4c5d77249f9a119cc89dafe8745dc1ad1f1a5f06b6a3988ca454/ultralytics_thop-2.0.14-py3-none-any.whl (26 kB)
+Requirement already satisfied: requests>=2.23.0 in /root/miniconda3/lib/python3.8/site-packages (from ultralytics) (2.25.1)
+Requirement already satisfied: torch>=1.8.0 in /root/miniconda3/lib/python3.8/site-packages (from ultralytics) (1.11.0+cu113)
+Requirement already satisfied: matplotlib>=3.3.0 in /root/miniconda3/lib/python3.8/site-packages (from ultralytics) (3.5.2)
+Collecting py-cpuinfo
+  Downloading http://mirrors.aliyun.com/pypi/packages/e0/a9/023730ba63db1e494a271cb018dcd361bd2c917ba7004c3e49d5daf795a2/py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+Collecting pyyaml>=5.3.1
+  Downloading http://mirrors.aliyun.com/pypi/packages/fd/7f/2c3697bba5d4aa5cc2afe81826d73dfae5f049458e44732c7a0938baa673/PyYAML-6.0.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (746 kB)
+     |████████████████████████████████| 746 kB 10.2 MB/s
+Collecting numpy>=1.23.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+     |████████████████████████████████| 17.3 MB 1.9 MB/s
+Requirement already satisfied: torchvision>=0.9.0 in /root/miniconda3/lib/python3.8/site-packages (from ultralytics) (0.12.0+cu113)
+Requirement already satisfied: pyparsing>=2.2.1 in /root/miniconda3/lib/python3.8/site-packages (from matplotlib>=3.3.0->ultralytics) (3.0.9)
+Requirement already satisfied: cycler>=0.10 in /root/miniconda3/lib/python3.8/site-packages (from matplotlib>=3.3.0->ultralytics) (0.11.0)
+Requirement already satisfied: packaging>=20.0 in /root/miniconda3/lib/python3.8/site-packages (from matplotlib>=3.3.0->ultralytics) (21.3)
+Requirement already satisfied: python-dateutil>=2.7 in /root/miniconda3/lib/python3.8/site-packages (from matplotlib>=3.3.0->ultralytics) (2.8.2)
+Requirement already satisfied: fonttools>=4.22.0 in /root/miniconda3/lib/python3.8/site-packages (from matplotlib>=3.3.0->ultralytics) (4.33.3)
+Requirement already satisfied: kiwisolver>=1.0.1 in /root/miniconda3/lib/python3.8/site-packages (from matplotlib>=3.3.0->ultralytics) (1.4.3)
+Collecting tzdata>=2022.1
+  Downloading http://mirrors.aliyun.com/pypi/packages/5c/23/c7abc0ca0a1526a0774eca151daeb8de62ec457e77262b66b359c3c7679e/tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+     |████████████████████████████████| 347 kB 10.5 MB/s
+Requirement already satisfied: pytz>=2020.1 in /root/miniconda3/lib/python3.8/site-packages (from pandas>=1.1.4->ultralytics) (2022.1)
+Requirement already satisfied: six>=1.5 in /root/miniconda3/lib/python3.8/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics) (1.16.0)
+Requirement already satisfied: idna<3,>=2.5 in /root/miniconda3/lib/python3.8/site-packages (from requests>=2.23.0->ultralytics) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /root/miniconda3/lib/python3.8/site-packages (from requests>=2.23.0->ultralytics) (1.26.6)
+Requirement already satisfied: chardet<5,>=3.0.2 in /root/miniconda3/lib/python3.8/site-packages (from requests>=2.23.0->ultralytics) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /root/miniconda3/lib/python3.8/site-packages (from requests>=2.23.0->ultralytics) (2021.5.30)
+Requirement already satisfied: typing-extensions in /root/miniconda3/lib/python3.8/site-packages (from torch>=1.8.0->ultralytics) (4.2.0)
+Installing collected packages: tzdata, numpy, ultralytics-thop, tqdm, scipy, pyyaml, py-cpuinfo, pandas, opencv-python, ultralytics
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.22.4
+    Uninstalling numpy-1.22.4:
+      Successfully uninstalled numpy-1.22.4
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.61.2
+    Uninstalling tqdm-4.61.2:
+      Successfully uninstalled tqdm-4.61.2
+Successfully installed numpy-1.24.4 opencv-python-4.11.0.86 pandas-2.0.3 py-cpuinfo-9.0.0 pyyaml-6.0.2 scipy-1.10.1 tqdm-4.67.1 tzdata-2025.2 ultralytics-8.3.146 ultralytics-thop-2.0.14
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING ⚠️ Upgrade to torch>=2.0.0 for deterministic training.⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
+root用户！！！！可能危险
+
+
+
+
+
+开练！！！！！！！失败了，路径没对
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# yolo detect train model=yolov8n.pt data=dataset.yaml epochs=50 imgsz=640
+Creating new Ultralytics Settings v0.0.6 file ✅
+View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n.pt to 'yolov8n.pt'...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6.25M/6.25M [14:01<00:00, 7.79kB/s]
+New https://pypi.org/project/ultralytics/8.3.149 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.3.146 🚀 Python-3.8.10 torch-1.11.0+cu113 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11020MiB)
+ ⚠️
+
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# ls images/train/*.jpg | wc -l
+3989
+
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# # 随机抽取200张图片作为验证集🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# ls images/train/*.jpg | shuf | head -n 200 | while read -r image_path; do
+> label_path="${image_path%.jpg}.txt"
+> mv "$image_path" "images/val/"
+> if [ -f "$label_path" ]; then
+> mv "$label_path" "images/val/"
+> fi
+> done
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# # 查看训练集还剩多少图片
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# ls images/train/*.jpg | wc -l
+3789
+
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# # 查看验证集有多少图片
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# ls images/val/*.jpg | wc -l
+200
+
+
+root@autodl-container-704e11bd52-d06c32eb:~/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo# yolo detect train model=yolov8n.pt data=dataset.yaml epochs=50 imgsz=640
+New https://pypi.org/project/ultralytics/8.3.149 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.3.146 🚀 Python-3.8.10 torch-1.11.0+cu113 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11020MiB)
+WARNING ⚠️ Upgrade to torch>=2.0.0 for deterministic training.
+engine/trainer: agnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=16, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=dataset.yaml, degrees=0.0, deterministic=True, device=None, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=50, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolov8n.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train2, nbs=64, nms=False, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=100, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=None, rect=False, resume=False, retina_masks=False, save=True, save_conf=False, save_crop=False, save_dir=runs/detect/train2, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=0, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 603, in get_dataset
+    data = check_det_dataset(self.args.data)
+  File "/root/miniconda3/lib/python3.8/site-packages/ultralytics/data/utils.py", line 463, in check_det_dataset
+    raise FileNotFoundError(m)
+FileNotFoundError: Dataset 'dataset.yaml' images not found, missing path '/root/autodl-tmp/CNN的应用_目标检测_语义分割/ccpd_yolo/datasets/ccpd_yolo/images/val'

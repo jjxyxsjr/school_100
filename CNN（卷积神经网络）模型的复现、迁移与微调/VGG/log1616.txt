@@ -1,0 +1,189 @@
+D:\Anaconda\envs\DL\python.exe D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\main.py
+数据加载完毕：训练集 8005 张，测试集 2023 张。
+设备: cuda
+
+--- 开始第一阶段：迁移学习 (Feature Extraction) ---
+Epoch 1/5 | Batch 0/251 | Batch Loss: 0.7361
+Epoch 1/5 | Batch 50/251 | Batch Loss: 0.2755
+Epoch 1/5 | Batch 100/251 | Batch Loss: 0.3796
+Epoch 1/5 | Batch 150/251 | Batch Loss: 0.0847
+Epoch 1/5 | Batch 200/251 | Batch Loss: 0.0000
+Epoch 1/5 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段一] Epoch 1/5 总结 ---
+训练损失: 0.1087 | 测试损失: 0.0659 | 测试准确率: 98.32%
+✅ 新的最佳模型已保存！准确率: 98.32%
+Epoch 2/5 | Batch 0/251 | Batch Loss: 0.0581
+Epoch 2/5 | Batch 50/251 | Batch Loss: 0.0001
+Epoch 2/5 | Batch 100/251 | Batch Loss: 0.0494
+Epoch 2/5 | Batch 150/251 | Batch Loss: 0.0031
+Epoch 2/5 | Batch 200/251 | Batch Loss: 0.0270
+Epoch 2/5 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段一] Epoch 2/5 总结 ---
+训练损失: 0.0842 | 测试损失: 0.0707 | 测试准确率: 98.52%
+✅ 新的最佳模型已保存！准确率: 98.52%
+Epoch 3/5 | Batch 0/251 | Batch Loss: 0.0091
+Epoch 3/5 | Batch 50/251 | Batch Loss: 0.0100
+Epoch 3/5 | Batch 100/251 | Batch Loss: 0.4147
+Epoch 3/5 | Batch 150/251 | Batch Loss: 0.0034
+Epoch 3/5 | Batch 200/251 | Batch Loss: 0.0009
+Epoch 3/5 | Batch 250/251 | Batch Loss: 0.0003
+--- [阶段一] Epoch 3/5 总结 ---
+训练损失: 0.0816 | 测试损失: 0.0741 | 测试准确率: 98.67%
+✅ 新的最佳模型已保存！准确率: 98.67%
+Epoch 4/5 | Batch 0/251 | Batch Loss: 0.1874
+Epoch 4/5 | Batch 50/251 | Batch Loss: 0.0003
+Epoch 4/5 | Batch 100/251 | Batch Loss: 0.4839
+Epoch 4/5 | Batch 150/251 | Batch Loss: 0.0002
+Epoch 4/5 | Batch 200/251 | Batch Loss: 0.1005
+Epoch 4/5 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段一] Epoch 4/5 总结 ---
+训练损失: 0.0892 | 测试损失: 0.0702 | 测试准确率: 98.76%
+✅ 新的最佳模型已保存！准确率: 98.76%
+Epoch 5/5 | Batch 0/251 | Batch Loss: 0.5612
+Epoch 5/5 | Batch 50/251 | Batch Loss: 0.1332
+Epoch 5/5 | Batch 100/251 | Batch Loss: 0.0188
+Epoch 5/5 | Batch 150/251 | Batch Loss: 0.0018
+Epoch 5/5 | Batch 200/251 | Batch Loss: 0.0388
+Epoch 5/5 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段一] Epoch 5/5 总结 ---
+训练损失: 0.0864 | 测试损失: 0.0786 | 测试准确率: 98.81%
+✅ 新的最佳模型已保存！准确率: 98.81%
+
+--- 开始第二阶段：微调 (Fine-tuning last block) ---
+...正在解冻模型的最后一个卷积块 (Block 5)...
+  解冻层: 24-24
+  解冻层: 25-25
+  解冻层: 26-26
+  解冻层: 27-27
+  解冻层: 28-28
+  解冻层: 29-29
+  解冻层: 30-30
+
+微调阶段将更新 8 个参数张量。
+Epoch 1/5/微调 | Batch 0/251 | Batch Loss: 0.2891
+Epoch 1/5/微调 | Batch 50/251 | Batch Loss: 0.3217
+Epoch 1/5/微调 | Batch 100/251 | Batch Loss: 0.0000
+Epoch 1/5/微调 | Batch 150/251 | Batch Loss: 0.0000
+Epoch 1/5/微调 | Batch 200/251 | Batch Loss: 0.0002
+Epoch 1/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 1/5 总结 ---
+训练损失: 0.0717 | 测试损失: 0.0686 | 测试准确率: 98.81%
+Epoch 2/5/微调 | Batch 0/251 | Batch Loss: 0.0015
+Epoch 2/5/微调 | Batch 50/251 | Batch Loss: 0.0065
+Epoch 2/5/微调 | Batch 100/251 | Batch Loss: 0.0010
+Epoch 2/5/微调 | Batch 150/251 | Batch Loss: 0.0000
+Epoch 2/5/微调 | Batch 200/251 | Batch Loss: 0.3417
+Epoch 2/5/微调 | Batch 250/251 | Batch Loss: 0.0011
+--- [阶段二] Epoch 2/5 总结 ---
+训练损失: 0.0338 | 测试损失: 0.0653 | 测试准确率: 98.91%
+✅ 新的最佳模型已保存！准确率: 98.91%
+Epoch 3/5/微调 | Batch 0/251 | Batch Loss: 0.0012
+Epoch 3/5/微调 | Batch 50/251 | Batch Loss: 0.0028
+Epoch 3/5/微调 | Batch 100/251 | Batch Loss: 0.0023
+Epoch 3/5/微调 | Batch 150/251 | Batch Loss: 0.2451
+Epoch 3/5/微调 | Batch 200/251 | Batch Loss: 0.3916
+Epoch 3/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 3/5 总结 ---
+训练损失: 0.0361 | 测试损失: 0.0624 | 测试准确率: 98.86%
+Epoch 4/5/微调 | Batch 0/251 | Batch Loss: 0.0037
+Epoch 4/5/微调 | Batch 50/251 | Batch Loss: 0.0025
+Epoch 4/5/微调 | Batch 100/251 | Batch Loss: 0.0001
+Epoch 4/5/微调 | Batch 150/251 | Batch Loss: 0.0000
+Epoch 4/5/微调 | Batch 200/251 | Batch Loss: 0.0328
+Epoch 4/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 4/5 总结 ---
+训练损失: 0.0236 | 测试损失: 0.0625 | 测试准确率: 98.86%
+Epoch 5/5/微调 | Batch 0/251 | Batch Loss: 0.0135
+Epoch 5/5/微调 | Batch 50/251 | Batch Loss: 0.0000
+Epoch 5/5/微调 | Batch 100/251 | Batch Loss: 0.0000
+Epoch 5/5/微调 | Batch 150/251 | Batch Loss: 0.0267
+Epoch 5/5/微调 | Batch 200/251 | Batch Loss: 0.0000
+Epoch 5/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 5/5 总结 ---
+训练损失: 0.0212 | 测试损失: 0.0630 | 测试准确率: 98.86%
+
+训练完成，总耗时: 1056.6 秒 (17.61 分钟)
+🏆 最高测试准确率: 98.91%，模型已保存在 ./checkpoints/best_catdog_vgg16.pth
+警告：字体文件未找到: ./SimHei.ttf。图表标题可能无法显示中文。
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 35757 (\N{CJK UNIFIED IDEOGRAPH-8BAD}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 32451 (\N{CJK UNIFIED IDEOGRAPH-7EC3}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 19982 (\N{CJK UNIFIED IDEOGRAPH-4E0E}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 27979 (\N{CJK UNIFIED IDEOGRAPH-6D4B}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 35797 (\N{CJK UNIFIED IDEOGRAPH-8BD5}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 25439 (\N{CJK UNIFIED IDEOGRAPH-635F}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 22833 (\N{CJK UNIFIED IDEOGRAPH-5931}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 26354 (\N{CJK UNIFIED IDEOGRAPH-66F2}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 32447 (\N{CJK UNIFIED IDEOGRAPH-7EBF}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 38454 (\N{CJK UNIFIED IDEOGRAPH-9636}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 27573 (\N{CJK UNIFIED IDEOGRAPH-6BB5}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 21106 (\N{CJK UNIFIED IDEOGRAPH-5272}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 20934 (\N{CJK UNIFIED IDEOGRAPH-51C6}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 30830 (\N{CJK UNIFIED IDEOGRAPH-786E}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\trainer.py:193: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  plt.savefig(plot_filename)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 35757 (\N{CJK UNIFIED IDEOGRAPH-8BAD}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 32451 (\N{CJK UNIFIED IDEOGRAPH-7EC3}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 19982 (\N{CJK UNIFIED IDEOGRAPH-4E0E}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 27979 (\N{CJK UNIFIED IDEOGRAPH-6D4B}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 35797 (\N{CJK UNIFIED IDEOGRAPH-8BD5}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 25439 (\N{CJK UNIFIED IDEOGRAPH-635F}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 22833 (\N{CJK UNIFIED IDEOGRAPH-5931}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 26354 (\N{CJK UNIFIED IDEOGRAPH-66F2}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 32447 (\N{CJK UNIFIED IDEOGRAPH-7EBF}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 38454 (\N{CJK UNIFIED IDEOGRAPH-9636}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 27573 (\N{CJK UNIFIED IDEOGRAPH-6BB5}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 20998 (\N{CJK UNIFIED IDEOGRAPH-5206}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 21106 (\N{CJK UNIFIED IDEOGRAPH-5272}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 20934 (\N{CJK UNIFIED IDEOGRAPH-51C6}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 30830 (\N{CJK UNIFIED IDEOGRAPH-786E}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+D:\PyCharm\PyCharm 2025.1.1\plugins\python-ce\helpers\pycharm_matplotlib_backend\backend_interagg.py:124: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  FigureCanvasAgg.draw(self)
+📈 训练曲线图已保存至 training_curves_fine_tuned.png
+
+进程已结束，退出代码为 0
+可视化图例说明
+你问的这个问题非常好，因为从你的日志末尾可以看到 警告：字体文件未找到: ./SimHei.ttf，这意味着你生成的图表上，中文图例很可能显示成了方框。
+
+下面是 training_curves_fine_tuned.png 图表中颜色和线条对应的标签，你可以对照着看图：
+
+左侧图表：损失 (Loss) 曲线
+&lt;span style="color:blue;">蓝色实线圆点 (bo-)&lt;/span>: 阶段1 - 训练损失 (Train Loss)
+&lt;span style="color:red;">红色实线圆点 (ro-)&lt;/span>: 阶段1 - 测试损失 (Test Loss)
+&lt;span style.color:green;">*绿色虚线星号 (g--)**&lt;/span>: 阶段2 - 训练损失 (Train Loss)
+&lt;span style="color:magenta;">*品红/洋红虚线星号 (m--)**&lt;/span>: 阶段2 - 测试损失 (Test Loss)
+右侧图表：准确率 (Accuracy) 曲线
+&lt;span style="color:red;">红色实线圆点 (ro-)&lt;/span>: 阶段1 - 测试准确率 (Test Accuracy)
+&lt;span style="color:magenta;">*品红/洋红虚线星号 (m--)**&lt;/span>: 阶段2 - 测试准确率 (Test Accuracy)
+分割线
+灰色虚线: 用于区分第一阶段和第二阶段的边界。

@@ -1,0 +1,6 @@
+path: ccpd_yolo  # 相对路径或绝对路径
+train: images/train
+val: images/val
+
+nc: 1
+names: ['license_plate']

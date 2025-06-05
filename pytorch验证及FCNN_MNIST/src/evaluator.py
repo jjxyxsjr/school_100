@@ -94,7 +94,7 @@ class ModelEvaluator:
             #    img_to_plot = img_to_plot.permute(1, 2, 0).squeeze()
 
             ax.imshow(img_to_plot, cmap='gray')  # MNIST 是灰度图
-            title_color = "green" if preds[idx] == labels_to_show[idx] else "red"
+            title_color = "image" if preds[idx] == labels_to_show[idx] else "red"
             ax.set_title(f"预测: {preds[idx].item()}\n(真实: {labels_to_show[idx].item()})", color=title_color)
 
         plt.tight_layout()

@@ -1,0 +1,108 @@
+D:\Anaconda\envs\DL\python.exe D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\VGG\catdog_classifier\main.py
+数据加载完毕：训练集 8005 张，测试集 2023 张。
+设备: cuda
+
+--- 开始第一阶段：迁移学习 (Feature Extraction) ---
+Epoch 1/5 | Batch 0/251 | Batch Loss: 0.6978
+Epoch 1/5 | Batch 50/251 | Batch Loss: 0.0501
+Epoch 1/5 | Batch 100/251 | Batch Loss: 0.0020
+Epoch 1/5 | Batch 150/251 | Batch Loss: 0.0001
+Epoch 1/5 | Batch 200/251 | Batch Loss: 0.0131
+Epoch 1/5 | Batch 250/251 | Batch Loss: 0.0002
+--- [阶段一] Epoch 1/5 总结 ---
+训练损失: 0.0870 | 测试损失: 0.0606 | 测试准确率: 98.52%
+✅ 新的最佳模型已保存！准确率: 98.52%
+Epoch 2/5 | Batch 0/251 | Batch Loss: 0.0838
+Epoch 2/5 | Batch 50/251 | Batch Loss: 0.3114
+Epoch 2/5 | Batch 100/251 | Batch Loss: 0.2409
+Epoch 2/5 | Batch 150/251 | Batch Loss: 0.3039
+Epoch 2/5 | Batch 200/251 | Batch Loss: 0.0011
+Epoch 2/5 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段一] Epoch 2/5 总结 ---
+训练损失: 0.0870 | 测试损失: 0.0757 | 测试准确率: 98.47%
+Epoch 3/5 | Batch 0/251 | Batch Loss: 0.2687
+Epoch 3/5 | Batch 50/251 | Batch Loss: 0.0001
+Epoch 3/5 | Batch 100/251 | Batch Loss: 0.0154
+Epoch 3/5 | Batch 150/251 | Batch Loss: 0.0023
+Epoch 3/5 | Batch 200/251 | Batch Loss: 0.0015
+Epoch 3/5 | Batch 250/251 | Batch Loss: 0.0001
+--- [阶段一] Epoch 3/5 总结 ---
+训练损失: 0.0844 | 测试损失: 0.0815 | 测试准确率: 98.62%
+✅ 新的最佳模型已保存！准确率: 98.62%
+Epoch 4/5 | Batch 0/251 | Batch Loss: 0.0004
+Epoch 4/5 | Batch 50/251 | Batch Loss: 0.0180
+Epoch 4/5 | Batch 100/251 | Batch Loss: 0.0091
+Epoch 4/5 | Batch 150/251 | Batch Loss: 0.0003
+Epoch 4/5 | Batch 200/251 | Batch Loss: 0.0000
+Epoch 4/5 | Batch 250/251 | Batch Loss: 0.0005
+--- [阶段一] Epoch 4/5 总结 ---
+训练损失: 0.0736 | 测试损失: 0.0721 | 测试准确率: 98.62%
+Epoch 5/5 | Batch 0/251 | Batch Loss: 0.0976
+Epoch 5/5 | Batch 50/251 | Batch Loss: 0.2519
+Epoch 5/5 | Batch 100/251 | Batch Loss: 0.0000
+Epoch 5/5 | Batch 150/251 | Batch Loss: 0.0011
+Epoch 5/5 | Batch 200/251 | Batch Loss: 0.1568
+Epoch 5/5 | Batch 250/251 | Batch Loss: 0.0088
+--- [阶段一] Epoch 5/5 总结 ---
+训练损失: 0.0763 | 测试损失: 0.0813 | 测试准确率: 98.62%
+
+--- 开始第二阶段：微调 (Fine-tuning last block) ---
+...正在解冻模型的最后一个卷积块 (Block 5)...
+  解冻层: 24-24
+  解冻层: 25-25
+  解冻层: 26-26
+  解冻层: 27-27
+  解冻层: 28-28
+  解冻层: 29-29
+  解冻层: 30-30
+
+微调阶段将更新 8 个参数张量。
+Epoch 1/5/微调 | Batch 0/251 | Batch Loss: 0.0843
+Epoch 1/5/微调 | Batch 50/251 | Batch Loss: 0.0000
+Epoch 1/5/微调 | Batch 100/251 | Batch Loss: 0.0488
+Epoch 1/5/微调 | Batch 150/251 | Batch Loss: 0.0745
+Epoch 1/5/微调 | Batch 200/251 | Batch Loss: 0.0000
+Epoch 1/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 1/5 总结 ---
+训练损失: 0.0569 | 测试损失: 0.0706 | 测试准确率: 98.71%
+✅ 新的最佳模型已保存！准确率: 98.71%
+Epoch 2/5/微调 | Batch 0/251 | Batch Loss: 0.0100
+Epoch 2/5/微调 | Batch 50/251 | Batch Loss: 0.0564
+Epoch 2/5/微调 | Batch 100/251 | Batch Loss: 0.0220
+Epoch 2/5/微调 | Batch 150/251 | Batch Loss: 0.0008
+Epoch 2/5/微调 | Batch 200/251 | Batch Loss: 0.0006
+Epoch 2/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 2/5 总结 ---
+训练损失: 0.0396 | 测试损失: 0.0627 | 测试准确率: 98.96%
+✅ 新的最佳模型已保存！准确率: 98.96%
+Epoch 3/5/微调 | Batch 0/251 | Batch Loss: 0.0000
+Epoch 3/5/微调 | Batch 50/251 | Batch Loss: 0.0001
+Epoch 3/5/微调 | Batch 100/251 | Batch Loss: 0.0001
+Epoch 3/5/微调 | Batch 150/251 | Batch Loss: 0.0439
+Epoch 3/5/微调 | Batch 200/251 | Batch Loss: 0.0448
+Epoch 3/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 3/5 总结 ---
+训练损失: 0.0310 | 测试损失: 0.0597 | 测试准确率: 99.16%
+✅ 新的最佳模型已保存！准确率: 99.16%
+Epoch 4/5/微调 | Batch 0/251 | Batch Loss: 0.2040
+Epoch 4/5/微调 | Batch 50/251 | Batch Loss: 0.0015
+Epoch 4/5/微调 | Batch 100/251 | Batch Loss: 0.0000
+Epoch 4/5/微调 | Batch 150/251 | Batch Loss: 0.0000
+Epoch 4/5/微调 | Batch 200/251 | Batch Loss: 0.0000
+Epoch 4/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 4/5 总结 ---
+训练损失: 0.0271 | 测试损失: 0.0575 | 测试准确率: 99.06%
+Epoch 5/5/微调 | Batch 0/251 | Batch Loss: 0.0125
+Epoch 5/5/微调 | Batch 50/251 | Batch Loss: 0.0000
+Epoch 5/5/微调 | Batch 100/251 | Batch Loss: 0.0019
+Epoch 5/5/微调 | Batch 150/251 | Batch Loss: 0.0001
+Epoch 5/5/微调 | Batch 200/251 | Batch Loss: 0.0001
+Epoch 5/5/微调 | Batch 250/251 | Batch Loss: 0.0000
+--- [阶段二] Epoch 5/5 总结 ---
+训练损失: 0.0301 | 测试损失: 0.0530 | 测试准确率: 99.16%
+
+训练完成，总耗时: 1057.9 秒 (17.63 分钟)
+🏆 最高测试准确率: 99.16%，模型已保存在 ./checkpoints/best_catdog_vgg16.pth
+📈 训练曲线图已保存至 training_curves_fine_tuned.png
+
+进程已结束，退出代码为 0

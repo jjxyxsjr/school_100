@@ -1,0 +1,65 @@
+D:\Anaconda\envs\DL\python.exe D:\PyCharm\Py_Projects\school\school_100\CNN（卷积神经网络）模型的复现、迁移与微调\ResNet_50\main.py
+使用的设备是: cuda ✨
+数据加载完成！
+训练集大小: 3540, 验证集大小: 80, 测试集大小: 50
+类别数量: 5, 类别名称: ['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
+模型构建完成，已替换分类头并冻结主干网络。
+Epoch 1/10
+----------
+train Loss: 0.8273 Acc: 0.7664
+validation Loss: 0.4872 Acc: 0.8750
+
+Epoch 2/10
+----------
+train Loss: 0.4763 Acc: 0.8607
+validation Loss: 0.3347 Acc: 0.8875
+
+Epoch 3/10
+----------
+train Loss: 0.3853 Acc: 0.8836
+validation Loss: 0.2966 Acc: 0.9125
+
+Epoch 4/10
+----------
+train Loss: 0.3388 Acc: 0.8963
+validation Loss: 0.2601 Acc: 0.8875
+
+Epoch 5/10
+----------
+train Loss: 0.3241 Acc: 0.8986
+validation Loss: 0.2505 Acc: 0.9375
+
+Epoch 6/10
+----------
+train Loss: 0.2917 Acc: 0.9059
+validation Loss: 0.2144 Acc: 0.9250
+
+Epoch 7/10
+----------
+train Loss: 0.2743 Acc: 0.9147
+validation Loss: 0.2399 Acc: 0.9250
+
+Epoch 8/10
+----------
+train Loss: 0.2739 Acc: 0.9138
+validation Loss: 0.2423 Acc: 0.9125
+
+Epoch 9/10
+----------
+train Loss: 0.2555 Acc: 0.9161
+validation Loss: 0.2180 Acc: 0.9125
+
+Epoch 10/10
+----------
+train Loss: 0.2385 Acc: 0.9251
+validation Loss: 0.2136 Acc: 0.9375
+
+训练完成，耗时 8m 38s
+最佳验证集准确率: 0.937500
+
+正在绘制训练曲线图...
+
+开始使用 TTA 在测试集上评估模型...
+使用 TTA 的最终测试集准确率: 0.9000 🎯🚀
+
+进程已结束，退出代码为 0
