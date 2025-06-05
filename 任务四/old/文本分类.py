@@ -40,7 +40,7 @@ def task_text_generation():
 
     print(f"正在根据 '{prompt}' 生成文本...")
     # max_new_tokens 只控制新生成的文本长度，更精确
-    generated_texts = generator(prompt, max_new_tokens=30, num_return_sequences=1)
+    generated_texts = generator(prompt, max_new_tokens=50, num_return_sequences=1)
 
     print("-" * 20)
     print(generated_texts[0]['generated_text'])
